@@ -1,4 +1,5 @@
 module.exports = {
+  preset: 'jest-puppeteer',
   moduleFileExtensions: [
     'js',
     'jsx',
@@ -20,7 +21,7 @@ module.exports = {
     'jest-serializer-vue',
   ],
   testMatch: [
-    '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)',
+    '**/tests/e2e/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)',
   ],
   testURL: 'http://localhost/',
   watchPlugins: [

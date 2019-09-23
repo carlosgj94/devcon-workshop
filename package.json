@@ -7,10 +7,11 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "puppeteer": "node ./tests/e2e/home.spec.js",
-    "test:unit": "vue-cli-service test:unit"
+    "test:e2e": "vue-cli-service test:unit"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "jest": "^24.9.0",
     "puppeteer": "^1.20.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
@@ -28,6 +29,7 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "jest-puppeteer": "^4.3.0",
     "lint-staged": "^8.1.5",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
