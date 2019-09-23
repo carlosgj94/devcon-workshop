@@ -8,7 +8,7 @@
     <p>
       <p class="email">Email: </p>
       <input
-        id="eth-amount"
+        id="email-box"
         v-model="email"
         type="text"/>
     </p>

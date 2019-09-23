@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "puppeteer": "node ./tests/e2e/home.spec.js",
-    "test:e2e": "vue-cli-service test:unit"
+    "test:e2e": "vue-cli-service test:unit  --detectOpenHandles"
   },
   "dependencies": {
     "core-js": "^2.6.5",
