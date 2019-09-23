@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      <h3>Let the hunger games begin</h3>
+      <h3 id="happy-message">Let the hunger games begin</h3>
     </p>
     <h4>Buy a ticket</h4>
     <p>

@@ -6,10 +6,12 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "puppeteer": "node ./tests/e2e/home.spec.js",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "puppeteer": "^1.20.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "web3": "^1.2.1"
