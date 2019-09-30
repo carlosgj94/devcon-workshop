@@ -61,14 +61,15 @@ export default {
       if (this.message) {
         setTimeout(() => {
           this.message = undefined;
-        }, 3000);
+        }, 7000);
       }
     },
   },
   async mounted() {
     if (this.metamaskInstalled()) {
       this.web3 = new Web3(ethereum);
-      this.accounts = await ethereum.enable();
+      await ethereum.enable();
+      this.accounts = await this.web3.eth.getAccounts();
     }
   },
   methods: {
@@ -76,8 +77,9 @@ export default {
       if (typeof window.ethereum !== 'undefined') return true;
       return false;
     },
-    buyTicket() {
+    async buyTicket() {
       if (this.email) {
+        this.accounts = await this.web3.eth.getAccounts();
         this.web3.eth.sendTransaction(
           {
             from: this.accounts[0],
