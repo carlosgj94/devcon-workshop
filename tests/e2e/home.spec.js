@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-describe('Google', () => {
+describe('Buying tickets', () => {
   beforeAll(async () => {
     await page.goto('http://localhost:8080/');
   });
