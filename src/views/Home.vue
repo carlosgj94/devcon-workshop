@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="DevCon logo" src="../assets/unicorn.png" width="300">
-    <HelloWorld msg="Welome to the DevCon tickets sale!"/>
+    <HelloWorld msg="Welcome to the DevCon tickets sale!"/>
   </div>
 </template>
 
